@@ -38,6 +38,12 @@ impl Display for File {
 
 impl File {
     /// Creates a new file, given a name. data is empty and state is closed
+    ///
+    /// # Examples
+    ///
+    /// ```
+    /// let f = File::new("f1.txt");
+    /// ```
     fn new(name: &str) -> File {
         File {
             name: String::from(name),
